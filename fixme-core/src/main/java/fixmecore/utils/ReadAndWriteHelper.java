@@ -46,8 +46,8 @@ public class ReadAndWriteHelper implements CompletionHandler <Integer, CoreVars>
     }
 
     @Override
-    public void failed(Throwable e, CoreVars coreVars) {
-        e.printStackTrace();
+    public void failed(Throwable exc, CoreVars coreVars) {
+        exc.printStackTrace();
         if (!coreVars.isBroker) {
             System.out.println("MARKET OFFLINE");
             coreVars.shouldRead = false;

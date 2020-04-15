@@ -1,5 +1,6 @@
 package fixmecore.utils;
 
+import javax.validation.constraints.Null;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
@@ -52,7 +53,20 @@ public class Utils {
             String sumCode = encrypt(originalMsg);
             return (chVerif.equals(sumCode));
         }
-        return (false);
+        return false;
+    }
+
+    public static boolean isNbr(String strNbr) {
+        try {
+            double nbr = Double.parseDouble(strNbr);
+            if (nbr <= 0) {
+                throw new NumberFormatException("Input should be positive numbers");
+            }
+        } catch (NumberFormatException | NullPointerException e) {
+            System.out.println("Number format or Null Pointer Exception");
+            return false;
+        }
+        return true;
     }
 
 }
