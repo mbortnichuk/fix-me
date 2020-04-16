@@ -16,8 +16,8 @@ public class Response implements ResponseMessage {
     public void msgProcessing(String msg, ReadAndWriteHelper readAndWriteHelper, CoreVars coreVars) {
         System.out.println();
         System.out.println("Recieved message: " + msg);
-        if (msg.startsWith("registerId: ")) {
-            String givenId = msg.substring("registerId: ".length());
+        if (msg.startsWith("registerId:")) {
+            String givenId = msg.substring("registerId:".length());
             String fixStr;
             System.out.println("SenderId: " + givenId);
             FixModel fixModel = fixController.readToObj(coreVars.tmpStr);

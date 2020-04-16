@@ -1,0 +1,7 @@
+fixmecore\utils\Utils.class
+fixmecore\interfaces\ResponseMessage.class
+fixmecore\connector\FixConnector.class
+fixmecore\model\FixModel.class
+fixmecore\utils\CoreVars.class
+fixmecore\utils\ReadAndWriteHelper.class
+fixmecore\controller\FixController.class

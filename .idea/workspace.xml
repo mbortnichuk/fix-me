@@ -45,6 +45,27 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Broker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fixmebroker.Broker" />
+      <module name="fixme-broker" />
+      <option name="PROGRAM_PARAMETERS" value="50000 buy gold 1 300 " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fixmebroker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Broker" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -57,11 +78,22 @@
       <updated>1586963564777</updated>
       <workItem from="1586963568338" duration="8839000" />
       <workItem from="1586973961575" duration="5064000" />
-      <workItem from="1587030374640" duration="4964000" />
+      <workItem from="1587030374640" duration="8133000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fixme-broker/src/main/java/fixmebroker/Response.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

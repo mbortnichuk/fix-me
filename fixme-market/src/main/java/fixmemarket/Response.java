@@ -39,9 +39,9 @@ public class Response implements ResponseMessage {
             }
             System.out.println("Market Message < " + fixMsg + " >");
             FixConnector.sendStatMsg(fixMsg, coreVars, readAndWriteHelper);
-        }
-        else {
+        } else {
             System.out.println("CheckSum validated: NOT OK");
+
         }
     }
 

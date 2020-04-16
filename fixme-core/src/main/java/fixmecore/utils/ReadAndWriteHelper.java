@@ -63,7 +63,8 @@ public class ReadAndWriteHelper implements CompletionHandler <Integer, CoreVars>
         } else {
             System.out.println("BROKER OFFLINE");
         }
-         System.out.println("Exception attached");
+//         System.out.println("Exception attached");
+        System.exit(0);
     }
 
 }
