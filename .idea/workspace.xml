@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../farontait" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,7 +78,7 @@
       <updated>1586963564777</updated>
       <workItem from="1586963568338" duration="8839000" />
       <workItem from="1586973961575" duration="5064000" />
-      <workItem from="1587030374640" duration="8133000" />
+      <workItem from="1587030374640" duration="8411000" />
     </task>
     <servers />
   </component>
