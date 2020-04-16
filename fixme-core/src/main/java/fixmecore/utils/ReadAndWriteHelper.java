@@ -1,5 +1,7 @@
 package fixmecore.utils;
 
+import fixmecore.connector.FixConnector;
+
 import java.io.IOException;
 import java.nio.channels.CompletionHandler;
 import java.nio.channels.ReadPendingException;
@@ -15,9 +17,10 @@ public class ReadAndWriteHelper implements CompletionHandler <Integer, CoreVars>
                 System.out.format("Finished listening client %s%n", coreVars.clientAddress);
             } catch (IOException e) {
                 System.out.println("IOException");
+                e.getMessage();
 //                e.printStackTrace();
             }
-            return ;
+            return;
         }
 //        System.out.println("Is read write -> " + coreVars.isRead + " | port -> " + coreVars.mainPort);
         if (coreVars.isRead) {
@@ -39,7 +42,8 @@ public class ReadAndWriteHelper implements CompletionHandler <Integer, CoreVars>
                     coreVars.client.read(coreVars.buff, coreVars, this);
                 } catch (ReadPendingException e) {
                     System.out.println("Read Pending Exception -> ");
-//                    e.getMessage();
+//                    e.printStackTrace();
+                    e.getMessage();
                 }
             }
         }
@@ -47,14 +51,15 @@ public class ReadAndWriteHelper implements CompletionHandler <Integer, CoreVars>
 
     @Override
     public void failed(Throwable exc, CoreVars coreVars) {
-        exc.printStackTrace();
+        exc.getMessage();
+//        exc.printStackTrace();
         if (!coreVars.isBroker) {
             System.out.println("MARKET OFFLINE");
             coreVars.shouldRead = false;
             if (coreVars.responseMessage != null) {
                 coreVars.responseMessage.msgProcessing("OFFLINE", this, coreVars);
             }
-            //Connector.sendStaticMessage("offline", attach, this);
+            FixConnector.sendStatMsg("OFFLINE", coreVars, this);
         } else {
             System.out.println("BROKER OFFLINE");
         }

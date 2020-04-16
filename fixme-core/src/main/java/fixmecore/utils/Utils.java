@@ -33,6 +33,7 @@ public class Utils {
             pswd = hexstr + "";
         } catch (NoSuchAlgorithmException e) {
             System.out.println("No Such Algorithm Exception");
+            e.getMessage();
 //            e.printStackTrace();
         }
         return pswd;
@@ -64,6 +65,8 @@ public class Utils {
             }
         } catch (NumberFormatException | NullPointerException e) {
             System.out.println("Number format or Null Pointer Exception");
+            e.getMessage();
+//            e.printStackTrace();
             return false;
         }
         return true;

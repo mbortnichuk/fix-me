@@ -44,10 +44,11 @@ public class ConnectionHelper implements CompletionHandler<AsynchronousSocketCha
             cv.mainPort = coreVars.mainPort;
             cv.clientAddress = clientAddress;
             cv.isBroker = coreVars.isBroker;
-//            Clients.addClient(cv);
+            FixClient.addClient(cv);
             result.read(cv.buff, cv, readAndWriteHelper);
         } catch (IOException e) {
             System.out.println("IOException");
+            e.getMessage();
 //            e.printStackTrace();
         }
     }
@@ -55,6 +56,7 @@ public class ConnectionHelper implements CompletionHandler<AsynchronousSocketCha
     @Override
     public void failed(Throwable exc, CoreVars attachment) {
         System.out.println("Failed accept connection");
+        exc.getMessage();
 //        exc.printStackTrace();
     }
 

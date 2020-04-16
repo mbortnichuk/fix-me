@@ -61,7 +61,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-<!--                            <mainClass>fixmemarket.MainMarket</mainClass>-->
+                            <mainClass>fixmemarket.Market</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

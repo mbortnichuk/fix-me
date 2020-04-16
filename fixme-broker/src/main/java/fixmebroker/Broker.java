@@ -10,9 +10,8 @@ import javax.rmi.CORBA.Util;
 
 public class Broker {
 
-    public FixController fixController;
     public FixConnector fixConnector;
-    public ResponseMessage responseMessage;
+    public FixController fixController;
 
     public Broker(FixModel fixModel) {
         this.fixController = new FixController();
@@ -28,6 +27,7 @@ public class Broker {
             Thread.currentThread().join();
         } catch (InterruptedException e) {
             System.out.println("Interrupted Exception");
+            e.getMessage();
 //            e.printStackTrace();
         }
     }
@@ -36,8 +36,8 @@ public class Broker {
         if (args.length != 5) {
             System.out.println("Usage: java -jar broker.jar [marketId][requestType][instrument][quantity][price]");
         } else {
-            if (Utils.isNbr(args[0]) && Utils.isNbr(args[3]) && Utils.isNbr(args[4])
-                    && (args[1].equalsIgnoreCase("buy") || args[1].equalsIgnoreCase("sell"))) {
+            if (Utils.isNbr(args[0]) && Utils.isNbr(args[3]) && Utils.isNbr(args[4]) &&
+                    (args[1].equalsIgnoreCase("buy") || args[1].equalsIgnoreCase("sell"))) {
                 FixModel fixModel = new FixModel("40000", args[2], args[3], args[0],args[4], "0", args[1]);
                 new Broker(fixModel);
             } else {

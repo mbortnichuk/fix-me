@@ -16,6 +16,13 @@
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1aaAvw2n3Q3unr9ouA5KixlmVda" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -49,7 +56,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586963564777</updated>
       <workItem from="1586963568338" duration="8839000" />
-      <workItem from="1586973961575" duration="4882000" />
+      <workItem from="1586973961575" duration="5064000" />
+      <workItem from="1587030374640" duration="4964000" />
     </task>
     <servers />
   </component>

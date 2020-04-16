@@ -28,7 +28,7 @@ public class FixClient {
     }
 
     public static void addClient(CoreVars coreVars) {
-        System.out.println("New client added :: " + coreVars.id);
+        System.out.println("New client added > " + coreVars.id);
         addedCLients.add(coreVars);
     }
 

@@ -61,7 +61,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-<!--                            <mainClass>fixmerouter.MainRouter</mainClass>-->
+                            <mainClass>fixmerouter.Router</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

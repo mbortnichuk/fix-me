@@ -16,10 +16,10 @@ public class FixConnector {
     public CoreVars coreVars;
     public int port;
 
-    public FixConnector(int port) {
-        this.port = port;
-        this.responseMessage = null;
-    }
+//    public FixConnector(int port) {
+//        this.port = port;
+//        this.responseMessage = null;
+//    }
 
     public FixConnector(ResponseMessage responseMessage, int port) {
         this.responseMessage = responseMessage;
@@ -78,6 +78,7 @@ public class FixConnector {
             return true;
         } catch (Exception e) {
             System.out.println("Failed connecting to port ::" + this.port);
+            e.getMessage();
 //            e.printStackTrace();
         }
         return false;

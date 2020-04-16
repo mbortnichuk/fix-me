@@ -48,14 +48,13 @@ public class Response implements ResponseMessage {
                 sendToBroker(msg, readAndWriteHelper, coreVars);
             }
         } else {
-            FixConnector.sendStatMsg("SenderId=1|Type=1|Quantity=1|MarketId=1|Price=1|Status=2|RequestType=1|CheckSum=aa27d768bedf4790644899b5fa034b11",
-                    coreVars, readAndWriteHelper);
+            FixConnector.sendStatMsg("SenderId=1|Type=1|Quantity=1|MarketId=1|Price=1|Status=2|RequestType=1|CheckSum=aa27d768bedf4790644899b5fa034b11", coreVars, readAndWriteHelper);
         }
     }
 
     private void sendToMarket(String msg, ReadAndWriteHelper readAndWriteHelper, CoreVars staticCoreVars) {
         FixModel fixModel;
-        CoreVars	marketCoreVars;
+        CoreVars marketCoreVars;
         fixController = new FixController();
         if ((fixModel = fixController.readToObj(msg)) != null) {
             if ((marketCoreVars = FixClient.findMarket(fixModel.MARKETID)) != null) {
@@ -68,8 +67,7 @@ public class Response implements ResponseMessage {
                 FixConnector.sendStatMsg(msg.toLowerCase(), staticCoreVars, readAndWriteHelper);
             }
         } else {
-            FixConnector.sendStatMsg("SenderId=1|Type=1|Quantity=1|MarketId=1|Price=1|Status=2|RequestType=1|CheckSum=aa27d768bedf4790644899b5fa034b11",
-                    staticCoreVars, readAndWriteHelper);
+            FixConnector.sendStatMsg("SenderId=1|Type=1|Quantity=1|MarketId=1|Price=1|Status=2|RequestType=1|CheckSum=aa27d768bedf4790644899b5fa034b11", staticCoreVars, readAndWriteHelper);
         }
     }
 
@@ -88,8 +86,7 @@ public class Response implements ResponseMessage {
                 FixConnector.sendStatMsg(msg.toLowerCase(), staticCoreVars, readAndWriteHelper);
             }
         } else {
-            FixConnector.sendStatMsg("SenderId=1|Type=1|Quality=1|MarketId=1|Price=1|Status=2|RequestType=1|CheckSum=aa27d768bedf4790644899b5fa034b11",
-                    staticCoreVars, readAndWriteHelper);
+            FixConnector.sendStatMsg("SenderId=1|Type=1|Quality=1|MarketId=1|Price=1|Status=2|RequestType=1|CheckSum=aa27d768bedf4790644899b5fa034b11", staticCoreVars, readAndWriteHelper);
         }
     }
 

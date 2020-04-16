@@ -5,9 +5,9 @@ import fixmecore.model.FixModel;
 public class FixController {
 
     public String createFixMessage(FixModel fixModel) {
-        String msg = "SenderId=" + fixModel.SENDERID + "|OrderType=" + fixModel.INSTRUMENT +
-                "|Quantity=" + fixModel.QUANTITY + "|MarketId=" + fixModel.MARKETID +
-                "|Price=" + fixModel.PRICE + "Status=" + fixModel.STATUS + "RequestType=" + fixModel.REQUESTTYPE;
+        String msg = "SenderId=" + fixModel.SENDERID + " | OrderType=" + fixModel.INSTRUMENT +
+                " | Quantity=" + fixModel.QUANTITY + " | MarketId=" + fixModel.MARKETID +
+                " | Price=" + fixModel.PRICE + " | Status=" + fixModel.STATUS + " | RequestType=" + fixModel.REQUESTTYPE;
         return msg;
     }
 
@@ -23,6 +23,7 @@ public class FixController {
             return (new FixModel(senderId, instr, quantity, marketId, price, status, requestType));
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Array Index Out Of Bound Exception -> " + str);
+            e.getMessage();
 //            e.printStackTrace();
         }
         return null;

@@ -7,8 +7,6 @@ import java.nio.channels.AsynchronousServerSocketChannel;
 
 public class Router {
 
-    FixClient fixClient = new FixClient();
-
     public static void registerServer(int port) {
         try {
             AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open();
@@ -22,6 +20,7 @@ public class Router {
             System.out.println("Server listening to port " + port);
         } catch (Exception e) {
             System.out.println("Failure listening to port " + port);
+            e.getMessage();
 //            e.printStackTrace();
         }
     }
@@ -33,6 +32,7 @@ public class Router {
             Thread.currentThread().join();
         } catch (InterruptedException e) {
             System.out.println("Interrupted Exception");
+            e.getMessage();
 //            e.printStackTrace();
         }
     }

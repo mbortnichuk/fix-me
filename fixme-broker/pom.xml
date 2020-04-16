@@ -61,7 +61,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-<!--                            <mainClass>fixmebroker.MainBroker</mainClass>-->
+                            <mainClass>fixmebroker.Broker</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
