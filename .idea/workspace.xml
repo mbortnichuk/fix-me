@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="212fae1a-b7bd-41d7-b94a-84f693829bb8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixme-broker/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fixme-broker/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixme-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fixme-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixme-core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fixme-core/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixme-market/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fixme-market/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixme-router/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fixme-router/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +86,7 @@
       <workItem from="1586973961575" duration="5064000" />
       <workItem from="1587030374640" duration="8411000" />
       <workItem from="1588073903280" duration="745000" />
-      <workItem from="1588074750781" duration="693000" />
+      <workItem from="1588074750781" duration="892000" />
     </task>
     <servers />
   </component>
