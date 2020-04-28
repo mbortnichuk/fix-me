@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fixme-core" />
         <module name="fixme-broker" />
+        <module name="fixme-core" />
         <module name="fixme-router" />
         <module name="fixme-market" />
       </profile>
